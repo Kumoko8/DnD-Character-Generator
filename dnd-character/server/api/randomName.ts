@@ -1,12 +1,13 @@
 export default defineEventHandler(async event => {
 
 
-    const response = await $fetch("https://randomuser.me/api/")
-console.log(response)
+    const randomName = await $fetch("https://randomuser.me/api/")
 
-const firstName ={
-    firstName: response.results[0].name.first
+
+const characterName ={
+    firstName: randomName.results[0].name.first,
+    lastName: randomName.results[0].name.last,
 }
-    return firstName
+    return characterName
 })
 

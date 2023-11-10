@@ -19,7 +19,7 @@ const { data: randomName } = await useFetch('/api/randomName')
     <div class="m-4 p-3">
 <div class="p-3">
 
-    <p class="p-3"> Name : {{ randomName.firstName }}</p>
+    <p class="p-3"> Name : {{ randomName.firstName }} {{ randomName.lastName }}</p>
     <p class="p-3"> Race </p>
     <p class="p-3"> Class </p>
     <p class="p-3"> Stats </p>
