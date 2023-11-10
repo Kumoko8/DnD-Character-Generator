@@ -1,22 +1,22 @@
 <template>
-    <div class="text-right grid grid-cols-3 ">
+    <div class=" bg-black text-white text-right font-semibold grid grid-cols-4 py-3 px-2">
+  <div> 
+    <p class="text-left text-xl font-bold grid justify-center ">D&D Character Generator </p>
+  </div>
         <div>
-            
-        </div>
-        <div>
-            <NuxtLink to="/">
+            <NuxtLink to="/" class="hover:underline">
                 Home
             </NuxtLink>
         </div>
         <div>
 
-            <NuxtLink to="/about">
+            <NuxtLink to="/about" class="hover:underline">
                 About
             </NuxtLink>
         </div>
         <div>
 
-            <NuxtLink to="/contact">
+            <NuxtLink to="/contact" class="hover:underline">
                 Contact
             </NuxtLink>
         </div>
