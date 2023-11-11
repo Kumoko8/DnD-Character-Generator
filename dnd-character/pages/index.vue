@@ -27,9 +27,12 @@ const { data: randomName } = await useFetch('/api/randomName')
                 <button class="font-semibold bg-white p-2 mx-3 rounded-md hover:bg-black hover:text-white"> Generate New
                     Name </button>
             </p>
-            <p class="p-3"> Race : <input label="chosen-race" placeholder="Chosen Race" class="mx-2 px-2 rounded-xl">
+            <p class="p-3 grid grid-cols-5"> Race : 
+                <div>
+                    <SelectMenu/>
 
-                <button class="font-semibold bg-white p-2 mx-3 rounded-md  hover:bg-black hover:text-white"> Generate New
+                </div>
+                <button class="font-semibold bg-white p-2 mx-3 rounded-md  hover:bg-black hover:text-white "> Generate New
                     Race
                 </button>
             </p>
